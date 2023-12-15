@@ -224,3 +224,21 @@ function submitForm() {
 }
 
 
+// goto top button
+
+   // Function to scroll to the top of the page
+   function goToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  }
+
+  // Show/hide the "Go to Top" button based on scroll position
+  window.onscroll = function () {
+    var button = document.getElementById("goToTop");
+    if (document.body.scrollTop > window.innerHeight / 2 || document.documentElement.scrollTop > window.innerHeight / 2) {
+      button.style.display = "block";
+    } else {
+      button.style.display = "none";
+    }
+  };
+  

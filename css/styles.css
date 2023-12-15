@@ -25,6 +25,19 @@
   /* transition: all 2s linear; */
 }
 
+#goToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #b72222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
 .flex {
   display: flex;
   align-items: center;
