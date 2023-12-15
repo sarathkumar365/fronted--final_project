@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/review.css" />
+    <link rel="stylesheet" href="../css/signup.css">
+    <title>Document</title>
+
+    <style> 
+        .navbar {
+            background-color: #191919;
+        }
+
+        .logo {
+            color: white;
+        }
+
+        .nav--right a {
+            color: white;
+        }
+
+        .contact:hover {
+            background-color: transparent;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav--left"><a href="./index.html" class="logo">AutoGO</a></div>
+        <div class="nav--right">
+            <div class="about"><a href="./html/About.html">About</a></div>
+            <div class="contact"><a href="./html/Contact.html">Contact</a></div>
+            <div class="contact"><a href="./html/allvehicles.html">Vehicles</a></div>
+            <div class="contact signIn"><a href="../html/signin.html">SIGNIN</a></div>
+          </div>
+        <!-- hamburger -->
+        <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+            <input type="checkbox" />
+  
+            <span></span>
+            <span></span>
+            <span></span>
+  
+            <ul id="menu">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./html/About.html"><li>About</li></a>
+                <a href="./html/Contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+
+<div class="wrapper">
+    <form id="registrationForm" oninput="updateProgressBar()">
+        <label for="name">Name:</label>
+        <input type="name" id="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="password">password:</label>
+        <input type="password" id="password" required>
+        
+        <!-- <label for="url">Personal URL:</label>
+        <input type="url" id="url" required> -->
+        
+        <label for="yearOfBirth">Year of Birth:</label>
+        <input type="number" id="yearOfBirth" required>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <label for="comments">Comments:</label>
+        <textarea id="comments" rows="4" required></textarea>
+        
+        <input type="checkbox" id="confirmationCheckbox" required>
+        <label for="confirmationCheckbox">I agree to proceed.</label>
+        
+        <progress value="0" max="100" id="progressBar"></progress>
+        
+        <button type="button" onclick="clearForm()">Clear All</button>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+    <script src="../js/signup.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

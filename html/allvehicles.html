@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/allvehicles.css">
+  <title>Vehicles</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="nav--left"><a href="../index.html" class="logo">AutoGO</a></div>
+      <div class="nav--right">
+          <div class="about"><a href="./About.html">About</a></div>
+          <div class="contact"><a href="./Contact.html">Contact</a></div>
+          <p id="user--preview" class="hidden username">name</p>
+      </div>
+      <!-- hamburger -->
+      <div id="menuToggle">
+                  <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+              <a href="./index.html"><li>Home</li></a>
+              <a href="./About.html"><li>About</li></a>
+              <a href="./Contact.html"><li>Contact</li></a>
+          </ul>
+      </div>
+  </nav>
+
+  <section class="vehicle--tabs">
+    <div class="car">
+      <a href="./Cars.html">
+        <img class="image" src="../images/vehicles/ca.jpg" alt="car view">
+        <div class="middle">
+          <div class="text">CARS</div>
+        </div>
+      </a>
+    </div>
+    <div class="bike">
+      <a href="./Bikes.html">
+        <img class="image" src="../images/vehicles/bv.jpg" alt="car view">
+        <div class="middle">
+          <div class="text">BIKES</div>
+        </div>
+      </a>
+    </div>
+    <div class="truck">
+      <a href="./Trucks.html">
+        <img class="image" src="../images/vehicles/tv.jpg" alt="car view">
+        <div class="middle">
+          <div class="text">TRUCKS</div>
+        </div>
+      </a>
+    </div>
+  </section>
+  </div>
+  <footer class="footer">
+    <div class="fl">
+        <h4>AutoGo</h4>
+    </div>
+    <div class="fr">
+        <div class="fr--details">
+            <ul>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                <li><a href="./Contact.html">Location</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+
+</html>

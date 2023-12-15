@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/allvehicles.css">
+    <link rel="stylesheet" href="../css/adminpannel.css">
+    <title>Admin pannel</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav--left"><a href="../index.html" class="logo">AutoGO</a></div>
+        <div class="nav--right">
+            <div class="about"><a href="./About.html">About</a></div>
+            <div class="contact"><a href="./Contact.html">Contact</a></div>
+            <div class="contact"><a href="./allvehicles.html">Vehicles</a></div>
+            <div id="logout" class="contact logout hidden"><a>LOGOUT</a></div>
+            <p id="user--preview" class="hidden username">name</p>
+
+        </div>
+        <!-- hamburger -->
+        <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./About.html"><li>About</li></a>
+                <a href="./Contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="admin-panel">
+            <h2>Reservation Data</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Selected Day</th>
+                        <th>Duration</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="reservationTableBody">
+                    <!-- Rows will be dynamically added here using JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

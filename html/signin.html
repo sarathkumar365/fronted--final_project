@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/review.css" />
+    <link rel="stylesheet" href="../css//signin.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav--left"><a href="../index.html" class="logo">AutoGO</a></div>
+        <div class="nav--right">
+            <div class="about"><a href="./About.html">About</a></div>
+            <div class="contact"><a href="./Contact.html">Contact</a></div>
+            <div class="contact"><a href="./allvehicles.html">Vehicles</a></div>
+            <div class="contact signIn"><a href="./signup.html">SIGNUP</a></div>
+          </div>
+        <!-- hamburger -->
+        <div id="menuToggle">
+   
+            <input type="checkbox" />
+  
+            <span></span>
+            <span></span>
+            <span></span>
+  
+            <ul id="menu">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./html/About.html"><li>About</li></a>
+                <a href="./html/Contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <form   onsubmit="checkCredentials(event)">
+            <label for="email">Email:</label>
+            <input type="email" id="loginEmail" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="loginPassword" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

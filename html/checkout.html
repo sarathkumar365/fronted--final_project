@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/allvehicles.css">
+    <link rel="stylesheet" href="../css//checkout.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav--left"><a href="../index.html" class="logo">AutoGO</a></div>
+        <div class="nav--right">
+            <div class="about"><a href="./About.html">About</a></div>
+            <div class="contact"><a href="./Contact.html">Contact</a></div>
+            <div class="contact"><a href="./allvehicles.html">Vehicles</a></div>
+        </div>
+        <!-- hamburger -->
+        <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./About.html"><li>About</li></a>
+                <a href="./Contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <form id="reservationForm">
+            <label for="day">Select a day:</label>
+            <select id="day" name="day" required>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+    
+            <label for="duration">For how many days:</label>
+            <input type="number" id="duration" name="duration" min="1" required>
+    
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+</body>
+
+<script src="../js/script.js"></script>
+</html>

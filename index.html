@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>AutoGo</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/review.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav--left"><a href="./index.html" class="logo">AutoGO</a></div>
+      <div class="nav--right">
+          <div class="about"><a href="./html/About.html">About</a></div>
+          <div class="contact"><a href="./html/Contact.html">Contact</a></div>
+          <div class="contact"><a href="./html/allvehicles.html">Vehicles</a></div>
+          <div id="show--bttns" class="flex">
+            <!-- <div  class="admin"><a href="./html/admin.html">Admin login</a></div> -->
+            <div  style="color: white;" class="contact button-45"><a href="./html/signup.html">SIGNUP</a></div>
+            <div  style="color: white;" class="contact button-45"><a href="./html/signInNew.html">SIGNIN</a></div>
+          </div>
+
+          <div class="show--user flex">
+            <p id="user--name" class="uName"></p>
+            <div id="logout"   class="contact  bttn--log hidden"><a>LOGOUT</a></div>
+          </div>
+        </div>
+      <!-- hamburger -->
+      <div id="menuToggle">
+                  <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+              <a href="./index.html"><li>Home</li></a>
+              <a href="./html/About.html"><li>About</li></a>
+              <a href="./html/Contact.html"><li>Contact</li></a>
+              <a href="./html/signup.html"><li>SIGNUP</li></a>
+              <a href="./html/signInNew.html"><li>SIGNIN</li></a>
+          </ul>
+      </div>
+  </nav>
+    <section class="home" id="home">
+      <h1 class="home-parallax">
+        Welcome to <span class="logo--font">AutoGo</span>
+        <h6>Your perfect renting partner</h6>
+      </h1>
+      <img src="./images/car_red.png" class="home-parallax" alt="E30" />
+      <a href="./html/allvehicles.html" class="btn">Check our vehicles</a>
+    </section>
+    <!--end of home-->
+    <!--container of icons card-->
+    <div class="container">
+      <section class="icons-container">
+        <div class="icons">
+          <i class="fas fa-home">
+            <img src="./images/svg/branches-svgrepo-com.svg" alt="avg">
+          </i>
+          <div class="content">
+            <h3>100+</h3>
+            <p>branches</p>
+          </div>
+        </div>
+
+        <div class="icons">
+          <i class="fas fa-car">
+            <img src="./images/svg/real-racing-svgrepo-com.svg" alt="cars">
+          </i>
+          <div class="content">
+            <h3>500+</h3>
+            <p>vehicles</p>
+          </div>
+        </div>
+        <div class="icons">
+          <i class="fas fa-users">
+            <img src="./images/svg/users-svgrepo-com.svg" alt="customers">
+          </i>
+          <div class="content">
+            <h3>2k +</h3>
+            <p>customers</p>
+          </div>
+        </div>
+
+        <div class="icons" id="hide">
+          <i clas="fas">
+            <img src="./images/svg/new-svgrepo-com.svg" alt="new">
+          </i>
+          <div class="content">
+            <h3>100+</h3>
+            <p>new vehicles</p>
+          </div>
+        </div>
+      </section>
+      <!--icon card end-->
+      <!-- vehicles card-->
+      <section class="vehicles" id="vehicles">
+        <h1 class="heading">Popular <span>vehicles</span></h1>
+        <div class="vehicles-slider">
+          <div class="wrapper">
+            <!--vehicleBox-->
+            <div class="box">
+              <img src="./images/w124.png" alt="w124" />
+              <div class="content">
+                <h3>W124</h3>
+                <div class="price"><span>price: </span>$75</div>
+                <p>
+                  <span class="fas fa-circle"></span>1986
+                  <span class="fas fa-circle"></span>auto
+                  <span class="fas fa-circle"></span>petrol
+                </p>
+                <!-- <a href="#" class="btn">Check our listings</a> -->
+              </div>
+            </div>
+            <!--end of vehicle Box-->
+            <!--vehicleBox-->
+            <div class="box">
+              <img src="./images/w124-2.png" alt="w124-red" />
+              <div class="content">
+                <h3>W124 v8</h3>
+                <div class="price"><span>price: </span>$90</div>
+                <p>
+                  <span class="fas fa-circle"></span>1987
+                  <span class="fas fa-circle"></span>auto
+                </p>
+                <!-- <a href="#" class="btn">Check our listings</a> -->
+              </div>
+            </div>
+            <!--end of vehicle Box-->
+            <!--vehicleBox-->
+            <div class="box">
+              <img src="./images/w124-3.png" alt="w124" />
+              <div class="content">
+                <h3>W126</h3>
+                <div class="price"><span>price: </span>$55</div>
+                <p>
+                  <span class="fas fa-circle"></span>1987
+                  <span class="fas fa-circle"></span>auto
+                </p>
+                <!-- <a href="#" class="btn">Check our listings</a> -->
+              </div>
+            </div>
+            <!--end of vehicle Box-->
+            <!--vehicleBox-->
+            <div class="box">
+              <img src="./images/w124-4.png" alt="" />
+              <div class="content">
+                <h3>W123</h3>
+                <div class="price"><span>price: </span>$95</div>
+                <p>
+                  <span class="fas fa-circle"></span>1989
+                  <span class="fas fa-circle"></span>auto
+                </p>
+                <!-- <a href="#" class="btn">Check our listings</a> -->
+              </div>
+            </div>
+            <!--end of vehicle Box-->
+          </div>
+        </div>
+      </section>
+      <!--review-->
+      <section class="review">
+        <h1 class="heading">User <span>Reviews</span></h1>
+        <div class="outerdiv">
+          <div class="innerdiv">
+            <!-- div1 -->
+            <div class="div1 eachdiv">
+              <div class="userdetails">
+                <div class="imgbox">
+                  <img src="./images/aby.jpeg" alt="abin" />
+                </div>
+                <div class="detbox">
+                  <p class="name">Abin Antony</p>
+                  <p class="designation">Verified Customer</p>
+                </div>
+              </div>
+              <div class="review">
+                <h4>A Hidden Gem: Unforgettable Vacation Rental!"</h4>
+                <p>
+                  “ Our recent vacation rental experience through this website
+                  was nothing short of magical! The property turned out to be a
+                  hidden gem. From the moment we arrived, we were captivated by
+                  its charm and beauty. The accommodation was immaculate, and
+                  the amenities provided exceeded our expectations. The owners'
+                  attention to detail was evident in every corner of the rental,
+                  making it a truly memorable stay. Moreover, the booking
+                  process was smooth and hassle-free, thanks to the
+                  user-friendly interface. The customer support team was readily
+                  available to address any queries promptly. ”
+                </p>
+              </div>
+            </div>
+            <!-- div2 -->
+            <div class="div2 eachdiv">
+              <div class="userdetails">
+                <div class="imgbox">
+                  <img src="./images/anandhu.jpeg" alt="Anandhu pic" />
+                </div>
+                <div class="detbox">
+                  <p class="name">Anandhu</p>
+                  <p class="designation">Verified Customer</p>
+                </div>
+              </div>
+              <div class="review">
+                <h4>Best Rental: Highly Recommended</h4>
+                <p>
+                  “ I had an amazing time booking through this rental website.
+                  The process was effortless, and the property was exceptional.
+                  From the cozy accommodations to the friendly customer service,
+                  I highly recommend it! ”
+                </p>
+              </div>
+            </div>
+            <!-- div3 -->
+            <div class="div3 eachdiv">
+              <div class="userdetails">
+                <div class="imgbox">
+                  <img src="./images/justin.jpeg" alt="Justin" />
+                </div>
+                <div class="detbox">
+                  <p class="name dark">Justin Thomas</p>
+                  <p class="designation dark">Verified Customer</p>
+                </div>
+              </div>
+              <div class="review dark">
+                <h4>A Dream Getaway: Unparalleled Rental Experience!</h4>
+                <p>
+                  “ Our stay at this rental was an absolute dream come true! The
+                  property's breathtaking views and luxurious amenities made it
+                  an unforgettable experience. From the moment we booked, the
+                  website's easy navigation and responsive customer service
+                  impressed us. The rental itself was immaculate, offering
+                  comfort and convenience at every turn. Whether we were
+                  lounging on the private terrace or exploring nearby
+                  attractions, every moment was filled with joy. We cannot
+                  recommend this rental enough to anyone seeking a truly
+                  unparalleled vacation. ”
+                </p>
+              </div>
+            </div>
+            <!-- div4 -->
+            <div class="div4 eachdiv">
+              <div class="userdetails">
+                <div class="imgbox">
+                  <img src="./images/rositta.jpeg" alt="Rositta" />
+                </div>
+                <div class="detbox">
+                  <p class="name dark">Rositta Ann</p>
+                  <p class="designation dark">Verified Customer</p>
+                </div>
+              </div>
+              <div class="review dark">
+                <h4>An overall wonderful and rewarding experience</h4>
+                <p>
+                  “ Thank you for the wonderful experience! I now have a job I
+                  really enjoy, and make a good living while doing something I
+                  love. ”
+                </p>
+              </div>
+            </div>
+            <!-- div5 -->
+            <div class="div5 eachdiv">
+              <div class="userdetails">
+                <div class="imgbox">
+                  <img src="./images/sarath.jpeg" alt="Sarath" />
+                </div>
+                <div class="detbox">
+                  <p class="name">Sarath Kumar</p>
+                  <p class="designation">Verified Customer</p>
+                </div>
+              </div>
+              <div class="review">
+                <h4>Exceeded Expectations: Phenomenal Rental!</h4>
+                <p>
+                  “ Our stay at this rental was an absolute dream come true! The
+                  property's breathtaking views and luxurious amenities made it
+                  an unforgettable experience. From the moment we booked, the
+                  website's easy navigation and responsive customer service
+                  impressed us. The rental itself was immaculate, offering
+                  comfort and convenience at every turn. Whether we were
+                  lounging on the private terrace or exploring nearby
+                  attractions, every moment was filled with joy. We cannot
+                  recommend this rental enough to anyone seeking a truly
+                  unparalleled vacation. We're already planning our next visit,
+                  eager to relive the magic of this incredible getaway!”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end of review-->
+      <footer class="footer">
+        <div class="fl">
+            <h4>AutoGo</h4>
+        </div>
+        <div class="fr">
+            <div class="fr--details">
+                <ul>
+                    <li><a href="./html/About.html">About</a></li>
+                    <li><a href="./html/Contact.html">Contact</a></li>
+                    <li><a href="./html/Contact.html">Location</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="./js/script.js" ></script>
+</body>
+    </div>
+  </body>
+</html>
