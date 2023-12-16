@@ -4,6 +4,7 @@ const userPreview = document.getElementById('user--preview')
 const logoutBttn = document.getElementById('logout')
 const showBttns = document.getElementById('show--bttns') 
 const showUserName = document.getElementById('user--name')
+const user = document.getElementById('user--preview')
 const registrationForm = document.getElementById('registrationForm');
 
     // Get stored data from cookies
@@ -23,6 +24,9 @@ const registrationForm = document.getElementById('registrationForm');
                 element.classList.remove('hidden'); 
             });
             logoutBttn?.classList.remove('hidden')
+            // user?.classList.remove('hidden')
+            // user?.innerHTML.value = storedFormData.name;
+            
         } else {
         }
     }
@@ -32,7 +36,7 @@ const currentUser = {
 };
 
 
-console.log(currentUser);
+// console.log(currentUser);
 
 // signin logic
 
